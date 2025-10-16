@@ -100,14 +100,6 @@ const Index = () => {
                 </Button>
 
                 <Button 
-                  onClick={() => setGameMode('categories')}
-                  className="w-full h-14 text-lg bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600"
-                >
-                  <Icon name="Grid3x3" className="mr-2" size={24} />
-                  Категории вопросов
-                </Button>
-
-                <Button 
                   onClick={() => setGameMode('playing')}
                   className="w-full h-16 text-xl bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700 font-bold"
                 >
