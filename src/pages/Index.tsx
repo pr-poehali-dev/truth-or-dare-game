@@ -86,7 +86,7 @@ const Index = () => {
           <Card className="bg-white/90 backdrop-blur shadow-xl border-pink-200">
             <CardContent className="pt-8 pb-8 px-6">
               <div className="text-center mb-8">
-                <h1 className="text-4xl font-bold text-pink-600 mb-2">Правда или Действие</h1>
+                <h1 className="text-4xl font-bold text-pink-600 mb-2">Эротические Фанты</h1>
                 <p className="text-pink-500">Открой новые грани отношений</p>
               </div>
 
