@@ -74,8 +74,7 @@ const Index = () => {
   const getSpicyLevelText = () => {
     if (spicyLevel === 1) return 'Близость';
     if (spicyLevel === 2) return 'Нарастающая страсть';
-    if (spicyLevel === 3) return 'Смелые эксперименты';
-    if (spicyLevel === 4) return 'Откровенные фанты';
+    if (spicyLevel === 3) return 'Полный отрыв';
     return 'Творческие задания';
   };
 
@@ -137,7 +136,7 @@ const Index = () => {
                   value={[spicyLevel]}
                   onValueChange={(val) => setSpicyLevel(val[0])}
                   min={1}
-                  max={5}
+                  max={4}
                   step={1}
                   className="mb-4"
                 />
@@ -153,8 +152,7 @@ const Index = () => {
                   {spicyLevel === 1 && 'Нежные прикосновения и романтические моменты'}
                   {spicyLevel === 2 && 'Чувственные задания с нарастающей страстью'}
                   {spicyLevel === 3 && 'Смелые и откровенные эротические эксперименты'}
-                  {spicyLevel === 4 && 'Максимально откровенные и страстные фанты'}
-                  {spicyLevel === 5 && 'Творческие и необычные эротические задания'}
+                  {spicyLevel === 4 && 'Творческие и необычные эротические задания'}
                 </p>
               </div>
 
