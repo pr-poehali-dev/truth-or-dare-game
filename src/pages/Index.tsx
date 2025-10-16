@@ -24,7 +24,7 @@ interface Question {
 
 const Index = () => {
   const [gameMode, setGameMode] = useState<GameMode>('menu');
-  const [spicyLevel, setSpicyLevel] = useState<number>(3);
+  const [spicyLevel, setSpicyLevel] = useState<number>(1);
   const [categories, setCategories] = useState<Category[]>([
     { id: '1', name: 'Романтика', icon: 'Heart', enabled: true },
     { id: '2', name: 'Комедия', icon: 'Laugh', enabled: true },
@@ -72,11 +72,10 @@ const Index = () => {
   };
 
   const getSpicyLevelText = () => {
-    if (spicyLevel === 1) return 'Невинно';
-    if (spicyLevel === 2) return 'Легко';
-    if (spicyLevel === 3) return 'Умеренно';
-    if (spicyLevel === 4) return 'Остро';
-    return 'Очень остро';
+    if (spicyLevel === 1) return 'Близость';
+    if (spicyLevel === 2) return 'Восходящее возбуждение';
+    if (spicyLevel === 3) return 'Жаркая развязка';
+    return 'Разнообразные задания';
   };
 
   return (
@@ -137,24 +136,23 @@ const Index = () => {
                   value={[spicyLevel]}
                   onValueChange={(val) => setSpicyLevel(val[0])}
                   min={1}
-                  max={5}
+                  max={4}
                   step={1}
                   className="mb-4"
                 />
 
                 <div className="flex justify-between text-sm text-pink-500">
-                  <span>Невинно</span>
-                  <span>Остро</span>
+                  <span>Близость</span>
+                  <span>Разнообразие</span>
                 </div>
               </div>
 
               <div className="bg-pink-50 rounded-lg p-4 mb-6">
                 <p className="text-pink-700 text-center">
-                  {spicyLevel === 1 && 'Легкие и невинные вопросы для начала'}
-                  {spicyLevel === 2 && 'Немного более личные вопросы'}
-                  {spicyLevel === 3 && 'Умеренно откровенные темы'}
-                  {spicyLevel === 4 && 'Острые и провокационные вопросы'}
-                  {spicyLevel === 5 && 'Максимально откровенные темы'}
+                  {spicyLevel === 1 && 'Нежные прикосновения и романтические моменты'}
+                  {spicyLevel === 2 && 'Чувственные задания с нарастающей страстью'}
+                  {spicyLevel === 3 && 'Откровенные фанты с максимальной близостью'}
+                  {spicyLevel === 4 && 'Смелые и разнообразные эротические задания'}
                 </p>
               </div>
 
